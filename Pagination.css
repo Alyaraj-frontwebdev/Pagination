@@ -1,0 +1,80 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #DB382A 0%, #621868 100%) no-repeat;
+    height: 100vh;
+}
+h1{
+    margin-top: 0;
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    cursor: default;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 500px;
+    font-size: 25px;
+    background-color: rgba(11, 10, 10, 0.4);
+    border-radius: 15px;
+    color: white;
+    cursor: default;
+}
+.pagination-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+}
+.pagination{
+    width: 500px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px 5px rgb(3, 3, 43);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 64, 109);
+    padding: 10px 10px;
+}
+.pagination a{
+    padding: 9px 18px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(155, 155, 238);
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+.control{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(200, 200, 239);
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out ;
+}
+.disabled{
+    color: rgba(12, 16, 41, 0.5);
+    cursor: default;
+}
+.control:not(.disabled):hover,.pageNumbers a:hover{
+    background-color: rgb(9, 9, 75);
+    color: white;
+}
+a.active{
+    background-color: rgb(9, 9, 75);
+    color: white;
+}
+.hidden{
+    display: none;
+}
